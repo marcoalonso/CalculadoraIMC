@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var alturaLabel: UILabel!
+    @IBOutlet weak var pesoLabel: UILabel!
+    @IBOutlet weak var alturaSlider: UISlider!
+    @IBOutlet weak var pesoSlider: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
+    
+    @IBAction func pesoSliderAction(_ sender: UISlider) {
+        print(sender.value)
+    }
+    
 
 }
 

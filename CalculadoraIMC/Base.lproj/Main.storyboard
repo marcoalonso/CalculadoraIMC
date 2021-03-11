@@ -50,10 +50,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="YJb-fk-81D">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="60" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="YJb-fk-81D">
                                 <rect key="frame" x="22" y="306" width="330" height="31"/>
+                                <connections>
+                                    <action selector="pesoSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="cmc-rS-pwK"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="75" minValue="1" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="An7-96-lly">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="2.2000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="An7-96-lly">
                                 <rect key="frame" x="5" y="430" width="334" height="31"/>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="calendar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="72g-fq-6vv">
@@ -101,6 +104,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Calculadora IMC" id="s3o-pi-k70"/>
                     <connections>
+                        <outlet property="alturaLabel" destination="VPw-1Y-9eN" id="kGD-8c-TgH"/>
+                        <outlet property="alturaSlider" destination="An7-96-lly" id="GMs-nB-QAg"/>
+                        <outlet property="pesoLabel" destination="luE-kc-2kl" id="E4x-J3-Xwb"/>
+                        <outlet property="pesoSlider" destination="YJb-fk-81D" id="EKM-ug-2C2"/>
                         <segue destination="cip-dk-61C" kind="show" id="Gx1-oM-jtU"/>
                     </connections>
                 </viewController>
